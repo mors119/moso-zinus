@@ -218,7 +218,7 @@ public class Common {
 		Pagination pg = new Pagination();
 		
 		String pn = request.getParameter("pageNum");
-		int pageNum = (pn != null && !pn.isBlank()) ? Integer.parseInt(pn) : 1;
+		int pageNum = (pn != null && !pn.trim().isEmpty()) ? Integer.parseInt(pn) : 1;
 	    pg.setPageNum(pageNum);
 
 		Map<String, String> map = new HashMap<>();
@@ -228,7 +228,7 @@ public class Common {
 			String key = em.nextElement();
 			String val = request.getParameter(key);
 			
-			if (!"pageNum".equalsIgnoreCase(key) && !val.isBlank()) {
+			if (!"pageNum".equalsIgnoreCase(key) && !val.trim().isEmpty()) {
 	            map.put(key, val);
 	        }
 		}

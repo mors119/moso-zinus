@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import lombok.Data;
 
+
 @Data
 public class Pagination {
 	// 기본값

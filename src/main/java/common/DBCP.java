@@ -13,7 +13,7 @@ import javax.sql.DataSource;
 public class DBCP {
 	// ORACLE
 	String DRIVER = "oracle.jdbc.driver.OracleDriver";
-	private final String URL = "jdbc:oracle:thin:@192.168.0.26:1521:xe";
+	private final String URL = "jdbc:oracle:thin:@//oracle:1521/XEPDB1";
 	private final String USER = "zinus";
 	private final String PASS = "1234";
 	

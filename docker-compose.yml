@@ -1,0 +1,12 @@
+services:
+  oracle:
+    platform: linux/amd64
+    image: gvenzl/oracle-xe:21-slim
+    environment:
+      ORACLE_PASSWORD: 1234
+      APP_USER: zinus
+      APP_USER_PASSWORD: 1234
+    ports:
+      - "1521:1521"
+    volumes:
+      - ./sql:/container-entrypoint-initdb.d
