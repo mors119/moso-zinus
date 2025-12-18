@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="lagacy">
+    <output-path>$PROJECT_DIR$/out/artifacts</output-path>
+    <root id="archive" name="lagacy.war">
+      <element id="artifact" artifact-name="moso-zinus:war exploded" />
+    </root>
+  </artifact>
+</component>
