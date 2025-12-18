@@ -1,4 +1,6 @@
 # moso-zinus
 zinus shopping clone coding.
-docker build -t legacy-test .
-docker run --rm -p 8085:8080 legacy-test
+
+unzip legacy-moso.zip
+
+만약 재빌드 하려면 tomcat-9, Eclipes 준비할 것
